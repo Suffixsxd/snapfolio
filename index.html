@@ -578,10 +578,16 @@
             margin-bottom: 0.2rem;
         }
 
-        .contact-method-text p {
+        .contact-method-text a, .contact-method-text p {
             margin: 0;
             color: var(--gray);
             font-size: 0.9rem;
+            text-decoration: none;
+        }
+
+        .contact-method-text a:hover {
+            color: var(--primary);
+            text-decoration: underline;
         }
 
         /* Footer */
@@ -724,6 +730,11 @@
                 flex-direction: column;
                 align-items: center;
             }
+
+            .footer-links {
+                flex-direction: column;
+                gap: 1rem;
+            }
         }
 
         @media (max-width: 576px) {
@@ -745,7 +756,7 @@
     <!-- Header -->
     <header id="header">
         <div class="container header-container">
-            <a href="#" class="logo">Suffix<span>s</span></a>
+            <a href="https://www.fiverr.com/s/2KvBQbq" class="logo" target="_blank">Suffix<span>s</span></a>
             <nav class="nav-links">
                 <a href="#about">About</a>
                 <a href="#projects">Projects</a>
@@ -965,7 +976,7 @@
                         </div>
                         <div class="contact-method-text">
                             <h4>Email</h4>
-                            <p>suffixs.midfixs@gmail.com</p>
+                            <a href="mailto:suffixs.midfixs@gmail.com">suffixs.midfixs@gmail.com</a>
                         </div>
                     </div>
                     <div class="contact-method">
@@ -983,7 +994,7 @@
                         </div>
                         <div class="contact-method-text">
                             <h4>Website</h4>
-                            <p>https://suffixsxd.github.io/suffixs</p>
+                            <a href="https://suffixsxd.github.io/suffixs" target="_blank">https://suffixsxd.github.io/suffixs</a>
                         </div>
                     </div>
                     <div class="contact-method">
@@ -992,7 +1003,7 @@
                         </div>
                         <div class="contact-method-text">
                             <h4>Fiverr</h4>
-                            <p>https://www.fiverr.com/s/2KvBQbq</p>
+                            <a href="https://www.fiverr.com/s/2KvBQbq" target="_blank">https://www.fiverr.com/s/2KvBQbq</a>
                         </div>
                     </div>
                 </div>
@@ -1004,12 +1015,18 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <a href="#" class="footer-logo">Suffix<span>s</span></a>
+                <a href="https://www.fiverr.com/s/2KvBQbq" class="footer-logo" target="_blank">Suffix<span>s</span></a>
                 <div class="footer-links">
                     <a href="#about">About</a>
                     <a href="#projects">Projects</a>
                     <a href="#pricing">Pricing</a>
                     <a href="#contact">Contact</a>
+                    <a href="https://suffixsxd.github.io/suffixs" target="_blank">Portfolio</a>
+                </div>
+                <div class="social-links">
+                    <a href="mailto:suffixs.midfixs@gmail.com" class="social-link" title="Email">✉️</a>
+                    <a href="https://www.fiverr.com/s/2KvBQbq" class="social-link" title="Fiverr" target="_blank">💰</a>
+                    <a href="https://suffixsxd.github.io/suffixs" class="social-link" title="Portfolio" target="_blank">🌐</a>
                 </div>
                 <p class="copyright">© 2025 Suffixs. All rights reserved.</p>
             </div>
